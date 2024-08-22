@@ -10,11 +10,14 @@ Course Jumper makes use of the Coursera web API and completes the videos + readi
 Surveys are not automatically completed since they are graded, thus needing user interaction to complete.
 
 ## Requirements :
-* Python 3.x
+* Python 3.1+ must be Installed.
 * [Only Windows] - Path set in Environment Variables
   For Setting Path follow these steps =>
-  * Open Python File Location
-  * Copy Path
+  * Open Python File Location and Copy Path
+
+ ![New Project](https://github.com/user-attachments/assets/36597e38-d4f2-4ff2-b8bb-42efc8ed7103)
+
+
   * Open Environment Variables > Path > Add the Python and Script folder Path
   * Now the Path is Set Successfully !!
 

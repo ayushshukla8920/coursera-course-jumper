@@ -13,7 +13,9 @@ Surveys are not automatically completed since they are graded, thus needing user
 * Open Coursera on browser and login via Your Username and Password and then open any course
 * Now head to developer Options and copy the infobatch call as cURL
   
-<img width="1440" alt="Screenshot 2024-08-22 at 10 39 42 PM" src="https://github.com/user-attachments/assets/148d358c-0aef-4cf2-8e65-54f7e00d36fa">
+  ![Screenshot 2024-08-22 at 10 39 42 PM](https://github.com/user-attachments/assets/0db72927-9566-4794-aba7-6b23b1b6947e)
+
+
 
 
 

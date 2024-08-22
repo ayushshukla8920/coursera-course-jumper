@@ -1,13 +1,25 @@
-# skipera
-Module to facilitate skipping Coursera (https://www.coursera.org/) videos.
+# Course Jumper
+This Module is developed to facilitate skipping Coursera (https://www.coursera.org/) videos.
 
-## Why?
-Skipera assists in automatically skip irrelevant MOOC courses which are made mandatory by universities. 
+## Why ?
+Course Jumper assists in automatically skip irrelevant MOOC courses which are made mandatory by universities. 
 Many of such courses are allotted directly by the university as credit fillers and are not in the interest of the student. The progress of the completion of these courses is tracked by the university and credits are allotted.
 
-## How?
+## How ?
 Skipera makes use of the Coursera web API and completes the videos + reading materials.
 Surveys are not automatically completed since they are graded, thus needing user interaction to complete.
+
+## Requirements :
+* Python 3.x
+* [Only Windows] - Path set in Environment Variables
+  For Setting Path follow these steps =>
+  * Open Python File Location
+  * Copy Path
+  * Open Environment Variables > Path > Add the Python and Script folder Path
+  * Now the Path is Set Successfully !!
+
+## How to get cAUTH Cookies ?
+* Firstly open Chrome 
 
 ## How to use
 * A sample config is provided in the repo. For now, cookie auth has been implemented since login requires reCaptcha.

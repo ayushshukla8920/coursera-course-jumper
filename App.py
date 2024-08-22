@@ -6,6 +6,21 @@ import tkinter as t
 from tkinter import PhotoImage
 import time
 import threading
+import platform
+
+
+
+raw=platform.uname()
+f=open('platform.txt','w')
+f.write(str(raw))
+f.close()
+f=open('platform.txt','r')
+plf=f.read()
+f.close()
+plf=re.search("system='+(.+?)', node",plf)
+if plf:
+    platform=plf.group(1)
+
 
 found=''
 url=''
@@ -15,10 +30,10 @@ ck=''
 root = t.Tk()
 root.title("Course Jumper")
 root.geometry("800x600")
-image = PhotoImage(file="Logo.png")
+image = PhotoImage(file="icon.gz")
 logo = t.Label(root,image = image)
 logo.pack()
-credit = t.Label(text = "Created by ayushshukla8920",fg='Yellow', font=("Helvetica", 20,"bold"))
+credit = t.Label(text = "Created by ayushshukla8920",fg='skyblue', font=("Helvetica", 20,"bold"))
 credit.pack()
 heading = t.Label(text = "Skip Coursera Videos : The Easy Way", font=("Helvetica", 30,"bold"))
 heading.pack(pady=8)
@@ -122,7 +137,10 @@ def check():
 
     try:
         with tempfile.TemporaryFile() as tempf:
-            proc = subprocess.Popen(['python3', 'Backend.py' , slug], stdout=tempf)
+            if platform=='Windows':
+                proc = subprocess.Popen(['python', 'Backend.py' , slug], stdout=tempf)
+            else:
+                proc = subprocess.Popen(['python3', 'Backend.py' , slug], stdout=tempf)
             proc.wait()
             tempf.seek(0)
             print(tempf.read())

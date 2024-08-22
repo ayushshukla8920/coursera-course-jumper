@@ -1,4 +1,4 @@
-# Course Jumper
+# skipera
 Module to facilitate skipping Coursera (https://www.coursera.org/) videos.
 
 ## Why?
@@ -6,32 +6,11 @@ Skipera assists in automatically skip irrelevant MOOC courses which are made man
 Many of such courses are allotted directly by the university as credit fillers and are not in the interest of the student. The progress of the completion of these courses is tracked by the university and credits are allotted.
 
 ## How?
-Course Jumper makes use of the Serv0id's Skipera and completes the videos + reading materials.
+Skipera makes use of the Coursera web API and completes the videos + reading materials.
 Surveys are not automatically completed since they are graded, thus needing user interaction to complete.
 
-## How to get CAUTH Cookie
-* Open Coursera on browser and login via Your Username and Password and then open any course
-* Now head to developer Options and copy the infobatch call as cURL
-  
-  ![Screenshot 2024-08-22 at 10 39 42 PM](https://github.com/user-attachments/assets/0db72927-9566-4794-aba7-6b23b1b6947e)
-  
-* Now head over to curlconverter.com and paste the cURL there and copy the cookies token and this is the token you need for CAUTH
-
-  ![Screenshot 2024-08-22 at 10 47 18 PM](https://github.com/user-attachments/assets/845cbef1-fb46-413d-9158-7424c1908b80)
-
-
-
-
-
-
 ## How to use
-* For Windows open Command Prompt on the Location and Run "Python3 App.py" the script will automatically install all the required modules
-* For macOS or Linux, open run.command
-* Enter Course URL, Coursera Registered Email and Password and the CAUTH cookie you got from cURL.
-* now click START and wait for course to be completed
-
-* ENJOY !!!
-
-
-credits := @serv0id
- 
+* A sample config is provided in the repo. For now, cookie auth has been implemented since login requires reCaptcha.
+* Add your cookies to example config as key:value pairs (simple python dict). The presence of the "CAUTH" cookie is important. (https://github.com/serv0id/skipera/issues/1)
+* Rename `config_example.py` to `config.py`
+* `python3 main.py course-slug` where course-slug is present in the Coursera Course URL. Example: "introduction-psychology" (without the quotes) if the URL is https://www.coursera.org/learn/introduction-psychology/home/module/2.

@@ -19,10 +19,24 @@ Surveys are not automatically completed since they are graded, thus needing user
 
 
   * Open Environment Variables > Path > Add the Python and Script folder Path
+
+![New Project-2](https://github.com/user-attachments/assets/fb46398b-f9b2-48d5-8fda-14af2145b185)
+<img width="1149" alt="Screenshot 2024-08-23 at 3 33 18 AM" src="https://github.com/user-attachments/assets/092287f2-0960-4cfd-8171-d25521f0ad02">
+
+
   * Now the Path is Set Successfully !!
 
 ## How to get cAUTH Cookies ?
-* Firstly open Chrome 
+* Firstly open Chrome and Login to Coursera
+* Now Open any Course Video and open Developer Options [ Ctrl+Shift+I OR Cmd+Option+I ]
+* Locate infobatch calls to Coursera domain and copy it as cURL(Bash)
+![Screenshot 2024-08-22 at 10 39 42 PM](https://github.com/user-attachments/assets/5b269bfc-f3dd-4dfa-a4c0-53f56b6a348f)
+
+
+* Go to [https://curlconverter.com](https://curlconverter.com) and Paste the copied cURL and then from the result copy only the Cookie content.
+![Screenshot 2024-08-22 at 10 47 18 PM](https://github.com/user-attachments/assets/a2a0d4a7-b0ec-4fc2-a0f1-8e79ae6db99d)
+
+* Now this is the cAUTH cookie that you need !!
 
 ## How to use
 * A sample config is provided in the repo. For now, cookie auth has been implemented since login requires reCaptcha.

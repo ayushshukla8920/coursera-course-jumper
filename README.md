@@ -1,4 +1,5 @@
-# Course Jumper
+# Course Jumper 
+* Created by Ayush Shukla
 This Module is developed to facilitate skipping Coursera (https://www.coursera.org/) videos.
 
 ## Why ?
@@ -42,7 +43,23 @@ Surveys are not automatically completed since they are graded, thus needing user
 * Now this is the cAUTH cookie that you need !!
 
 ## How to use
-* A sample config is provided in the repo. For now, cookie auth has been implemented since login requires reCaptcha.
-* Add your cookies to example config as key:value pairs (simple python dict). The presence of the "CAUTH" cookie is important. (https://github.com/serv0id/skipera/issues/1)
-* Rename `config_example.py` to `config.py`
-* `python3 main.py course-slug` where course-slug is present in the Coursera Course URL. Example: "introduction-psychology" (without the quotes) if the URL is https://www.coursera.org/learn/introduction-psychology/home/module/2.
+* Download the Latest Release and Extract the ZIP file
+* Open the Folder
+* Windows Hosts => run.bat
+* macOS/Linux => run.commaand
+
+
+
+<img width="1440" alt="Screenshot 2024-08-23 at 3 34 37 AM" src="https://github.com/user-attachments/assets/229fdf35-e6b1-4f26-bb36-2aed5642cf2c">
+
+
+* Now the App will Open. Enter Your Course URL,Email address, Password and cAUTH cookie and hit Start.
+* Wait till it Says Completed and Done !!
+  
+
+<img width="798" alt="Screenshot 2024-08-23 at 4 35 22 AM" src="https://github.com/user-attachments/assets/0657263b-8dc6-42ec-8b82-7d6ef6283a06">
+
+
+
+
+

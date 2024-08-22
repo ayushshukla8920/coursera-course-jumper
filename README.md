@@ -1,6 +1,6 @@
 # Course Jumper 
 * Created by Ayush Shukla
-This Module is developed to facilitate skipping Coursera (https://www.coursera.org/) videos.
+* This Module is developed to facilitate skipping Coursera (https://www.coursera.org/) videos.
 
 ## Why ?
 Course Jumper assists in automatically skip irrelevant MOOC courses which are made mandatory by universities. 

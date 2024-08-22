@@ -30,10 +30,13 @@ Surveys are not automatically completed since they are graded, thus needing user
 * Firstly open Chrome and Login to Coursera
 * Now Open any Course Video and open Developer Options [ Ctrl+Shift+I OR Cmd+Option+I ]
 * Locate infobatch calls to Coursera domain and copy it as cURL(Bash)
+
 ![Screenshot 2024-08-22 at 10 39 42 PM](https://github.com/user-attachments/assets/5b269bfc-f3dd-4dfa-a4c0-53f56b6a348f)
 
 
 * Go to [https://curlconverter.com](https://curlconverter.com) and Paste the copied cURL and then from the result copy only the Cookie content.
+
+
 ![Screenshot 2024-08-22 at 10 47 18 PM](https://github.com/user-attachments/assets/a2a0d4a7-b0ec-4fc2-a0f1-8e79ae6db99d)
 
 * Now this is the cAUTH cookie that you need !!

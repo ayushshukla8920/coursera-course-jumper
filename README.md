@@ -14,6 +14,10 @@ Surveys are not automatically completed since they are graded, thus needing user
 * Now head to developer Options and copy the infobatch call as cURL
   
   ![Screenshot 2024-08-22 at 10 39 42 PM](https://github.com/user-attachments/assets/0db72927-9566-4794-aba7-6b23b1b6947e)
+  
+* Now head over to curlconverter.com and paste the cURL there and copy the cookies token and this is the token you need for CAUTH
+
+  ![Screenshot 2024-08-22 at 10 47 18 PM](https://github.com/user-attachments/assets/845cbef1-fb46-413d-9158-7424c1908b80)
 
 
 
@@ -22,4 +26,12 @@ Surveys are not automatically completed since they are graded, thus needing user
 
 ## How to use
 * For Windows open Command Prompt on the Location and Run "Python3 App.py" the script will automatically install all the required modules
+* For macOS or Linux, open run.command
+* Enter Course URL, Coursera Registered Email and Password and the CAUTH cookie you got from cURL.
+* now click START and wait for course to be completed
+
+* ENJOY !!!
+
+
+credits := @serv0id
  

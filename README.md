@@ -1,5 +1,5 @@
 # Course Jumper 
-* Created by Ayush Shukla
+* Created by Ayush Shukla [Lovely Professional University]
 * This Module is developed to facilitate skipping Coursera (https://www.coursera.org/) videos.
 
 ## Why ?
